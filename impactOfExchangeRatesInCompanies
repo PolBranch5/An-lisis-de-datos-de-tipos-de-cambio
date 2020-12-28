@@ -26,8 +26,6 @@ for currency in currencies:
         trade_date = item['date']
         exchange_rates_Python[currency][trade_date] = adj_close
 
-print(exchange_rates_Python['EURUSD']['2020-12-03'])
-
 #Salimos del bucle inicial de currencies y cPonvertimos los datos en DataFrame
 currenciesDataFrame = pd.DataFrame.from_dict(exchange_rates_Python)
 
